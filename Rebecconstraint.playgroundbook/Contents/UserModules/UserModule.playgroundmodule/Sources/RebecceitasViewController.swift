@@ -95,68 +95,7 @@ public class RebecceitasViewController: UIViewController, UITableViewDataSource 
     }
     
     private func addConstraints() {
-        avatar.translatesAutoresizingMaskIntoConstraints = false
         
-        let avatarConstraints: [NSLayoutConstraint] = [
-            avatar.topAnchor.constraint(equalTo: view.topAnchor, constant: 32),
-            avatar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            avatar.heightAnchor.constraint(equalToConstant: 240),
-            avatar.widthAnchor.constraint(equalToConstant: 240)
-        ]
-        
-        NSLayoutConstraint.activate(avatarConstraints)
-        
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        let titleConstraints: [NSLayoutConstraint] = [
-            titleLabel.topAnchor.constraint(equalTo: avatar.bottomAnchor, constant: 24),
-            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ]
-        
-        NSLayoutConstraint.activate(titleConstraints)
-        
-        addField.translatesAutoresizingMaskIntoConstraints = false
-        
-        let addFieldConstraint: [NSLayoutConstraint] = [
-            addField.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 64),
-            addField.leadingAnchor.constraint(equalTo: recipeTable.leadingAnchor, constant: 15),
-            addField.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5),
-            addField.heightAnchor.constraint(equalToConstant: 60)
-        ]
-        
-        NSLayoutConstraint.activate(addFieldConstraint)
-        
-        addButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        let addButtonConstraint: [NSLayoutConstraint] = [
-            addButton.topAnchor.constraint(equalTo: addField.topAnchor),
-            addButton.bottomAnchor.constraint(equalTo: addField.bottomAnchor),
-            addButton.leadingAnchor.constraint(equalTo: addField.trailingAnchor, constant: 16),
-            addButton.trailingAnchor.constraint(equalTo: recipeTable.trailingAnchor, constant: -15)
-        ]
-        
-        NSLayoutConstraint.activate(addButtonConstraint)
-        
-        recipeTable.translatesAutoresizingMaskIntoConstraints = false
-        
-        let recipeTableConstraint: [NSLayoutConstraint] = [
-            recipeTable.topAnchor.constraint(equalTo: addField.bottomAnchor, constant: 64),
-            recipeTable.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 64),
-            recipeTable.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -64)
-        ]
-        
-        NSLayoutConstraint.activate(recipeTableConstraint)
-        
-        totalLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        let totalLabelConstraints: [NSLayoutConstraint] = [
-            totalLabel.topAnchor.constraint(equalTo: recipeTable.bottomAnchor, constant: 16),
-            totalLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16),
-            totalLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        ]
-        
-        NSLayoutConstraint.activate(totalLabelConstraints)
     }
     
     private func configureAvatarStyle() {
